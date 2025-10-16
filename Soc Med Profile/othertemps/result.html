@@ -1,0 +1,24 @@
+<h1><i>{{name}}</i></h1>
+
+<table>
+{% for k, value in student.items()%}
+    <tr>
+        <td>{{k}}</td>
+        <td>{{value}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<table>
+    <tr>
+        <td>ID Num</td>
+        <td>Name</td>
+        <td>Department</td>
+    </tr>
+    <tr>
+        {% for k, value in student.items()%}
+        <td>{{value}}</td>
+        {% endfor %}
+    </tr>
+</table>
+
+
